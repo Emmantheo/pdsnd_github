@@ -4,7 +4,7 @@
 #https://stackoverflow.com/questions/23294658/asking-the-user-for-input-until-they-give-a-valid-response
 #https://stackoverflow.com/questions/60214194/error-in-reading-stock-data-datetimeproperties-object-has-no-attribute-week
 
-#import important folders
+#time to import important folders
 
 import time
 import pandas as pd
@@ -105,7 +105,7 @@ def time_stats(df):
     most_common_start_hour = df['hour'].value_counts().idxmax()
     print("The most common start hour is :", most_common_start_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_time)) #time taken for code to run
     print('-'*40)
 
 
@@ -129,7 +129,7 @@ def station_stats(df):
     most_frequent_combination = (df['Start Station'] + "||" + df['End Station']).mode()[0]
     print("The most frequent combination of start station and end station trip is : " + str(most_frequent_combination.split("||")))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_time)) #time taken for code to run
     print('-'*40)
 
 
@@ -150,7 +150,7 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print("The mean travel time from the given fitered data is: " + str(mean_travel_time))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_time)) #time taken for code to run
     print('-'*40)
 
 
@@ -185,7 +185,7 @@ def user_stats(df, city):
         most_common_birth = birth_year.value_counts().idxmax()
         print('The most common birth from the given data is: \n', int(most_common_birth))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (time.time() - start_time)) #time taken for code to run
     print('-'*40)
 
 def display_raw_data(df):

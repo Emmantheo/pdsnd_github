@@ -9,7 +9,7 @@ Bikeshare project
 The project involves getting statistics of bicycle rent in three major US cities
 
 ### Files used
-
+There was no particular file used, just links.
 
 ### Credits
 https://www.analyticsvidhya.com/blog/2020/05/datetime-variables-python-pandas/
