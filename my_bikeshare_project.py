@@ -34,7 +34,7 @@ def get_filters():
            break
     month_list=['january', 'february', 'march', 'april', 'may','june','all']
     while True:
-        month = input("What month?\n").lower()
+        month = input("What month?\n").lower() #getting input for months
         if month not in month_list:
             print("wrong month; try again\n")
             continue
@@ -42,7 +42,7 @@ def get_filters():
             break
     day_list = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
     while True:
-        day = input ("What day of the week?\n").lower()
+        day = input ("What day of the week?\n").lower() #getting input for days of the week
         if day not in day_list:
             print("incorrect; enter the right day \n")
             continue
